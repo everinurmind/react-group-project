@@ -4,7 +4,7 @@ import { getMissions } from '../redux/missionsSlice';
 
 function Missions() {
   const dispatch = useDispatch();
-  const { missions } = useSelector((store) => store);
+  const { missions } = useSelector((store) => store.missions);
 
   useEffect(() => {
     dispatch(getMissions());

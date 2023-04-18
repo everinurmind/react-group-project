@@ -1,17 +1,25 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchRockets } from '../redux/rocketsSlice';
 import '../styles/Rockets.css';
 
 function Rockets() {
-  const rockets = useSelector((state) => state.rockets);
+  const dispatch = useDispatch();
+  const { rockets } = useSelector((store) => store.rockets);
+
+  useEffect(() => {
+    dispatch(fetchRockets());
+  }, [dispatch]);
 
   return (
     <div className="rocket">
       {rockets.map((rocket) => (
         <div key={rocket.rocket_id}>
-          <h2>{rocket.rocket_name}</h2>
-          <p>{rocket.rocket_type}</p>
           <img src={rocket.flickr_images[0]} alt={rocket.name} />
+          <div className="rocket-info">
+            <h2>{rocket.rocket_name}</h2>
+            <p>{rocket.description}</p>
+          </div>
         </div>
       ))}
     </div>
