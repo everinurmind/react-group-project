@@ -1,18 +1,22 @@
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 50px;
-  padding: 0 3rem;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 1rem 0.5rem 1rem;
+  margin: 0 2rem;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 header h1 {
   margin-right: auto;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 img {
-  width: 65px;
-  height: 65px;
+  width: 55px;
+  height: 55px;
 }
 
 ul {
@@ -23,10 +27,15 @@ ul {
 
 li a {
   text-decoration: none;
-  color: #555;
+  color: #007fff;
+  font-weight: normal;
 }
 
 .active {
   text-decoration: underline;
-  font-weight: bold;
+  color: #007fff;
+}
+
+span {
+  border: 1px solid #8e8e8e;
 }

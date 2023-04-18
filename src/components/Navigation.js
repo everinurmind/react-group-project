@@ -14,6 +14,7 @@ const Navigation = () => (
         <li>
           <NavLink to="/Missions">Missions</NavLink>
         </li>
+        <span />
         <li>
           <NavLink to="/Profile">My Profile</NavLink>
         </li>
