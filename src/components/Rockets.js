@@ -8,9 +8,9 @@ function Rockets() {
   return (
     <div className="rocket">
       {rockets.map((rocket) => (
-        <div key={rocket.id}>
-          <h2>{rocket.name}</h2>
-          <p>{rocket.type}</p>
+        <div key={rocket.rocket_id}>
+          <h2>{rocket.rocket_name}</h2>
+          <p>{rocket.rocket_type}</p>
           <img src={rocket.flickr_images[0]} alt={rocket.name} />
         </div>
       ))}
