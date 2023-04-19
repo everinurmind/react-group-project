@@ -31,11 +31,33 @@
 .rocket-info p {
   font-size: 20px;
   font-weight: normal;
-  margin-top: -30px;
+  margin-top: -25px;
+  width: 95%;
+}
+
+.rocket-info button {
+  font-size: 18px;
+  font-weight: lighter;
+  letter-spacing: 0.3px;
+  border-radius: 4px;
+  padding: 10px 25px;
+  margin-top: -15px;
+}
+
+.rocket-info #add-reservation {
+  background-color: #007fff;
+  color: #fff;
+  border: none;
+}
+
+.rocket-info #cancel-reservation {
+  background-color: #fff;
+  color: #555;
+  border: 1px solid #888;
 }
 
 .rocket img {
   width: 100%;
-  max-width: 400px;
-  height: auto;
+  max-width: 350px;
+  height: 250px;
 }

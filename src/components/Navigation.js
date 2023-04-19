@@ -5,7 +5,7 @@ import '../styles/Navigation.css';
 const Navigation = () => (
   <header>
     <img alt="logo" src={logo} />
-    <h1>Space Traveller&apos;s Hub</h1>
+    <h1>Space Travelers&apos; Hub</h1>
     <nav>
       <ul>
         <li>
