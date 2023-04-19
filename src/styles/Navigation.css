@@ -10,14 +10,14 @@ header {
 
 header h1 {
   margin-right: auto;
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 36px;
+  font-weight: 500;
   color: #333;
 }
 
 img {
-  width: 55px;
-  height: 55px;
+  width: 65px;
+  height: 65px;
 }
 
 ul {
@@ -30,7 +30,7 @@ li a {
   font-size: 18px;
   text-decoration: none;
   color: #007fff;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .active {
