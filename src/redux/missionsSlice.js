@@ -19,19 +19,15 @@ export const missionsSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(getMissions.pending, (state) => ({ ...state, isLoading: true }))
-      .addCase(getMissions.fulfilled, (state, { payload }) => ({
+      .addCase(getMissions.fulfilled, (state, action) => ({
         ...state,
         isLoading: false,
-        missions: payload.map((mission) => ({
-          mission_id: mission.mission_id,
-          mission_name: mission.mission_name,
-          description: mission.description,
-        })),
+        missions: action.payload,
       }))
-      .addCase(getMissions.rejected, (state, { payload }) => ({
+      .addCase(getMissions.rejected, (state, action) => ({
         ...state,
         isLoading: false,
-        error: payload.error,
+        error: action.payload,
       }));
   },
 });

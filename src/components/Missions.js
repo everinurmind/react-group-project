@@ -14,17 +14,22 @@ function Missions() {
   return (
     <div>
       <table>
-        <tr>
-          <th className="table-mission">Mission</th>
-          <th className="table-description">Description</th>
-          <th className="table-status">Status</th>
-        </tr>
-        {missions.map((mission) => (
-          <tr key={mission.mission_id}>
-            <td className="mission-name">{mission.mission_name}</td>
-            <td>{mission.description}</td>
+        <thead>
+          <tr>
+            <th className="table-mission">Mission</th>
+            <th className="table-description">Description</th>
+            <th className="table-status">Status</th>
           </tr>
-        ))}
+        </thead>
+
+        <tbody>
+          {missions.map((mission) => (
+            <tr key={mission.mission_id}>
+              <td className="mission-name">{mission.mission_name}</td>
+              <td>{mission.description}</td>
+            </tr>
+          ))}
+        </tbody>
       </table>
 
     </div>
