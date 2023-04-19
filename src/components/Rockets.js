@@ -26,7 +26,10 @@ function Rockets() {
           <img src={rocket.flickr_images[0]} alt={rocket.name} />
           <div className="rocket-info">
             <h2>{rocket.rocket_name}</h2>
-            <p>{rocket.description}</p>
+            <p>
+              {rocket.reserved && <span className="reserved-badge">Reserved</span>}
+              {rocket.description}
+            </p>
             {rocket.reserved ? (
               <button id="cancel-reservation" type="button" onClick={() => handleDelete(rocket.rocket_id)}>Cancel Reservation</button>
             ) : (
