@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.table-name {
+  width: 15%;
+}
+
+.table-description {
+  width: 50%;
+}
+
+.table-status {
+  width: 35%;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(207, 186, 153);
+}
+
+th,
+td {
+  padding: 0.5rem 1rem;
+}
+
+th {
+  text-align: left;
+}
+
+.mission-name {
+  font-size: 1rem;
+  font-weight: bold;
+}
