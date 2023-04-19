@@ -36,17 +36,21 @@ export const rocketsSlice = createSlice({
       .addCase(fetchRockets.pending, (state) => ({
         ...state, isLoading: true,
       }))
-      .addCase(fetchRockets.fulfilled, (state, { payload }) => ({
-        ...state,
-        isLoading: false,
-        rockets: payload.map((rocket) => ({
-          rocket_id: rocket.rocket_id,
-          rocket_name: rocket.rocket_name,
-          description: rocket.description,
-          flickr_images: rocket.flickr_images,
-          reserved: false,
-        })),
-      }))
+      .addCase(fetchRockets.fulfilled, (state, { payload }) => {
+        const updatedRockets = payload.map((payload) => {
+          const rocket = state.rockets.find((state) => state.rocket_id
+          === payload.rocket_id);
+          return {
+            ...payload,
+            reserved: rocket?.reserved ?? false,
+          };
+        });
+        return {
+          ...state,
+          isLoading: false,
+          rockets: updatedRockets,
+        };
+      })
       .addCase(fetchRockets.rejected, (state, { payload }) => ({
         ...state,
         isLoading: false,

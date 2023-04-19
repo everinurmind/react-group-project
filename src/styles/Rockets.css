@@ -32,15 +32,16 @@
   font-size: 20px;
   font-weight: normal;
   margin-top: -25px;
+  width: 95%;
 }
 
 .rocket-info button {
   font-size: 18px;
   font-weight: lighter;
   letter-spacing: 0.3px;
-  margin-top: 0;
   border-radius: 4px;
   padding: 10px 25px;
+  margin-top: -15px;
 }
 
 .rocket-info #add-reservation {
@@ -57,6 +58,6 @@
 
 .rocket img {
   width: 100%;
-  max-width: 400px;
-  height: auto;
+  max-width: 350px;
+  height: 250px;
 }
