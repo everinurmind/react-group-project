@@ -5,7 +5,6 @@ const initialState = {
   missions: [],
   isLoading: false,
   error: '',
-  // reserved: false,
 };
 
 export const getMissions = createAsyncThunk('missions/getMissions', async () => {
