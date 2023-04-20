@@ -1,9 +1,13 @@
 import React from 'react';
+import DisplayRockets from './DisplayRockets';
+import '../styles/Profile.css';
 
-function Portfolio() {
+function Profile() {
   return (
-    <div>Portfolio</div>
+    <div className="profile">
+      <DisplayRockets />
+    </div>
   );
 }
 
-export default Portfolio;
+export default Profile;
