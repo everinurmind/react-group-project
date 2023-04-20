@@ -5,7 +5,7 @@
 
 /* Styles for Rockets */
 .rockets,
-.missions {
+.missions-profile {
   width: 40%;
   height: 100%;
   margin: 0 50px;
@@ -13,14 +13,14 @@
 }
 
 .rockets h2,
-.missions h2 {
+.missions-profile h2 {
   margin-bottom: 20px;
   font-size: 30px;
   font-weight: 500;
 }
 
 .rockets ul,
-.missions ul {
+.missions-profile ul {
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -28,7 +28,7 @@
 }
 
 .rockets li,
-.missions li {
+.missions-profile li {
   padding: 20px 0 40px 20px;
   border: 1px solid #1a0e0e;
   font-size: 20px;

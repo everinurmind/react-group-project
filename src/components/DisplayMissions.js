@@ -5,7 +5,7 @@ function DisplayMissions() {
   const { missions } = useSelector((store) => store.missions);
   const reservedMissions = missions.filter((mission) => mission.reserved);
   return (
-    <div className="missions">
+    <div className="missions-profile">
       <h2>My Missions</h2>
       <ul>
         {reservedMissions.map((mission) => (
