@@ -1,6 +1,6 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import { getMissions, joinMission, leaveMission } from 'redux/missions/missionsSlice';
+import { getMissions, joinMission, leaveMission } from '../redux/missions/missionsSlice';
 
 const mockStore = configureMockStore([thunk]);
 
