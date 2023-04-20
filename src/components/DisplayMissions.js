@@ -3,12 +3,13 @@ import { useSelector } from 'react-redux';
 
 function DisplayMissions() {
   const { missions } = useSelector((store) => store.missions);
+  const reservedMissions = missions.filter((mission) => mission.reserved);
   return (
     <div className="missions">
       <h2>My Missions</h2>
       <ul>
-        {missions.map((mission) => (mission.reserved
-        && <li key={mission.mission_id}>{mission.mission_name}</li>))}
+        {reservedMissions.map((mission) => (
+          <li key={mission.mission_id}>{mission.mission_name}</li>))}
       </ul>
     </div>
   );
