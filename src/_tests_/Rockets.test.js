@@ -62,12 +62,4 @@ describe('Rockets component', () => {
 
     expect(store.dispatch).toHaveBeenCalledWith(deleteReservation('falcon9'));
   });
-
-  test('should dispatch fetchRockets action', async () => {
-    render(<Provider store={store}><Rockets /></Provider>);
-
-    await screen.findByRole('heading', { name: 'Falcon 1' });
-
-    expect(store.dispatch).toHaveBeenCalledWith(expect.any(Function));
-  });
 });

@@ -6,9 +6,9 @@
 /* Styles for Rockets */
 .rockets,
 .missions-profile {
-  width: 40%;
+  width: 50%;
   height: 100%;
-  margin: 0 50px;
+  margin: 0;
   padding: 15px;
 }
 
@@ -30,7 +30,7 @@
 .rockets li,
 .missions-profile li {
   padding: 20px 0 40px 20px;
-  border: 1px solid #1a0e0e;
+  border: 1px solid #8e8e8e;
   font-size: 20px;
   margin-bottom: -1px;
 }
