@@ -1,0 +1,36 @@
+.profile {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styles for Rockets */
+.rockets,
+.missions-profile {
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  padding: 15px;
+}
+
+.rockets h2,
+.missions-profile h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.rockets ul,
+.missions-profile ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 0;
+}
+
+.rockets li,
+.missions-profile li {
+  padding: 20px 0 40px 20px;
+  border: 1px solid #8e8e8e;
+  font-size: 20px;
+  margin-bottom: -1px;
+}

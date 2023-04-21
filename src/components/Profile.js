@@ -1,9 +1,15 @@
 import React from 'react';
+import DisplayRockets from './DisplayRockets';
+import '../styles/Profile.css';
+import DisplayMissions from './DisplayMissions';
 
-function Portfolio() {
+function Profile() {
   return (
-    <div>Portfolio</div>
+    <div className="profile">
+      <DisplayMissions />
+      <DisplayRockets />
+    </div>
   );
 }
 
-export default Portfolio;
+export default Profile;

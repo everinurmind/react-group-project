@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.missions {
+  padding: 1.5rem 3rem;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.table-name {
+  width: 15%;
+}
+
+.table-description {
+  width: 50%;
+}
+
+.table-status-member {
+  width: 15%;
+}
+
+.table-status-join {
+  width: 20%;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(207, 186, 153);
+}
+
+th,
+td {
+  padding: 0.5rem 1rem;
+}
+
+th {
+  text-align: left;
+}
+
+.mission-name {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn {
+  padding: 0.6rem 1rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+  letter-spacing: 0.1rem;
+  margin-left: 3rem;
+}
+
+button:hover {
+  background-color: antiquewhite;
+}
+
+.leave-btn {
+  border: 1px solid red;
+  color: red;
+}
+
+.join-btn {
+  padding: 0.7rem 1rem;
+}
+
+.member {
+  padding: 0.1rem;
+  border-radius: 0.7rem;
+  text-align: center;
+  width: 8rem;
+  line-height: 1.5rem;
+}
+
+.active-member {
+  color: white;
+  background-color: green;
+}
+
+.not-member {
+  background-color: rgba(0, 0, 0, 0.569);
+  color: white;
+}
