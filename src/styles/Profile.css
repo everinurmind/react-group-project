@@ -1,12 +1,12 @@
 .profile {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 /* Styles for Rockets */
 .rockets,
 .missions-profile {
-  width: 50%;
+  width: 30rem;
   height: 100%;
   margin: 0;
   padding: 15px;
