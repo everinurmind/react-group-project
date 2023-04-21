@@ -8,11 +8,11 @@ function DisplayRockets() {
     <div className="rockets">
       <h2>My Rockets</h2>
       <ul>
-        {reservedRockets.map((rocket) => (
+        {reservedRockets.length ? reservedRockets.map((rocket) => (
           <li key={rocket.rocket_id}>
             {rocket.rocket_name}
           </li>
-        ))}
+        )) : <input className="not-reserved" placeholder="No Rockets Reserved" />}
       </ul>
     </div>
   );
