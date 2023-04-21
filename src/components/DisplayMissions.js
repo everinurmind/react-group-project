@@ -9,7 +9,11 @@ function DisplayMissions() {
       <h2>My Missions</h2>
       <ul>
         {reservedMissions.length ? reservedMissions.map((mission) => (
-          <li key={mission.mission_id}>{mission.mission_name}</li>)) : <input className="not-reserved" placeholder="No Missions Joined" />}
+          <li className="row" key={mission.mission_id}>
+            {mission.mission_name}
+            <a target="_blank" rel="noreferrer" href={mission.url}>Read More</a>
+          </li>
+        )) : <input className="not-reserved" placeholder="No Missions Joined" />}
       </ul>
     </div>
   );

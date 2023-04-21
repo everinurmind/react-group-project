@@ -42,6 +42,7 @@ export const missionsSlice = createSlice({
           mission_id: mission.mission_id,
           mission_name: mission.mission_name,
           description: mission.description,
+          url: mission.wikipedia,
         })),
       }))
       .addCase(getMissions.rejected, (state, action) => ({
