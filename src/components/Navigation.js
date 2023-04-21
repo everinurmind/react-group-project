@@ -1,10 +1,12 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import logo from '../logo/planet.png';
 import '../styles/Navigation.css';
 
 const Navigation = () => (
   <header>
-    <img alt="logo" src={logo} />
+    <Link to="/">
+      <img alt="logo" src={logo} />
+    </Link>
     <h1>Space Travelers&apos; Hub</h1>
     <nav>
       <ul>
