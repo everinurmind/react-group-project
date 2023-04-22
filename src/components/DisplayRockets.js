@@ -8,11 +8,12 @@ function DisplayRockets() {
     <div className="rockets">
       <h2>My Rockets</h2>
       <ul>
-        {reservedRockets.map((rocket) => (
-          <li key={rocket.rocket_id}>
+        {reservedRockets.length ? reservedRockets.map((rocket) => (
+          <li className="row" key={rocket.rocket_id}>
             {rocket.rocket_name}
+            <a target="_blank" rel="noreferrer" href={rocket.wikipedia}>Read More</a>
           </li>
-        ))}
+        )) : <input className="not-reserved" placeholder="No Rockets Reserved" />}
       </ul>
     </div>
   );
