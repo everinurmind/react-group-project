@@ -28,8 +28,8 @@
 }
 
 .reserved-badge {
-  background-color: #33a8b1;
   color: #fff;
+  background-color: green;
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.7px;
@@ -51,6 +51,7 @@
   letter-spacing: 0.3px;
   border-radius: 4px;
   padding: 10px 25px;
+  cursor: pointer;
 }
 
 .rocket-info #add-reservation {
@@ -69,4 +70,56 @@
   width: 100%;
   max-width: 350px;
   height: 250px;
+  border-radius: 10px;
+}
+
+/* Details Section */
+.rocket-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.rocket-detail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: aliceblue;
+}
+
+.rocket-detail strong {
+  min-width: 120px;
+  margin-right: 16px;
+}
+
+.rocket-detail span {
+  margin-left: 8px;
+}
+
+.rocket-info #details-button {
+  background-color: #e8e8e8;
+  color: #999;
+  border: none;
+  cursor: pointer;
+}
+
+.rocket-info #details-button:hover {
+  background-color: #e1e1e1;
+  color: #666;
+}
+
+.item-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
