@@ -40,7 +40,7 @@ function Rockets() {
   return (
     <div className="rocket">
       {rockets.map((rocket) => (
-        <div key={rocket.rocket_id}>
+        <div className="rocket-card" key={rocket.rocket_id}>
           <img src={rocket.flickr_images[0]} alt={rocket.name} />
           <div className="rocket-info">
             <div className="item-title">
