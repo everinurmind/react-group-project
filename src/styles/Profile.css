@@ -1,9 +1,9 @@
 .profile {
   display: flex;
   justify-content: space-around;
+  color: #333;
 }
 
-/* Styles for Rockets */
 .rockets,
 .missions-profile {
   width: 30rem;
@@ -14,6 +14,9 @@
 
 .rockets h2,
 .missions-profile h2 {
+  width: 12rem;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
   font-size: 30px;
   font-weight: 500;
@@ -23,14 +26,16 @@
 .missions-profile ul {
   display: flex;
   flex-direction: column;
-  list-style: none;
-  gap: 0;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .rockets li,
 .missions-profile li {
-  padding: 20px 0 40px 20px;
-  border: 1px solid #8e8e8e;
+  padding: 25px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
   font-size: 20px;
   margin-bottom: -1px;
 }
@@ -45,5 +50,6 @@
 
 .row {
   display: flex;
+  justify-content: space-between;
   gap: 10rem;
 }

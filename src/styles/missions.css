@@ -58,7 +58,7 @@ th {
   margin-left: 3rem;
 }
 
-button:hover {
+.btn:hover {
   background-color: antiquewhite;
 }
 
